@@ -1,0 +1,16 @@
+@page
+
+
+<h3>Treasure Hunt Questions</h3>
+
+@{
+    var questions = Data.Questions.GetQuestion();
+}
+<ul>
+   @foreach (var q in questions)
+   {
+       <li>
+           @q.Clue
+       </li>
+   }
+</ul>
